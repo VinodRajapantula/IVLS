@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 12">
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="stack end" type="I" value="2"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="1266"/>
+			<Prp name="id" type="I" value="12"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="The test run has stopped because the &quot;Stop on Error&quot; setting is enabled."/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="41837.4782052894"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="picture" type="S" value="Picture2.png"/>
+			<Prp name="stack beginning" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;p&gt;The test execution has stopped because --&lt;/p&gt;&lt;ul&gt;&lt;li&gt;An error message was posted to the log and&lt;/li&gt;&lt;li&gt;The &lt;a href=&quot;aqa-help://6090&quot;&gt;Stop on Error&lt;/a&gt; project property is enabled.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt; If you don't want the test to stop on errors, disable this property (&lt;b&gt;Project Editor &amp;rArr; Properties &amp;rArr; Playback&lt;/b&gt;), or change your test commands so that they do not post errors to the log automatically. For instance, if some window or process was not found, use the WaitWindow, WaitProcess or similar methods to obtain the desired object.&lt;/p&gt;&lt;a href=&quot;aqa-help://2207&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="136"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="  Reading Configutaion.XML file for setting Global Data"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="41837.4777081482"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="1078"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="[STATUS : PASS] Create Job for Host  SIMULATOR  Status : Sucess , Job   JOB_SIMULATOR  is created  Sucessfully on Machine  VS4D27YR1 under Host  SIMULATOR"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="41837.4778743403"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="1078"/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="[STATUS : PASS] Network Connection Status : Sucess , Machine Name VS66VD5M1  is connected to the newwork"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="41837.4780365625"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 9">
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="1078"/>
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="[STATUS : PASS] Create Task for Job JOB_IVLS  Status : Sucess , Task    TASK_IVLS  is created  Sucessfully on Host IVLS  for Job JOB_IVLS"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="41837.47804"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="item 0">
+			<Prp name="line no" type="I" value="1266"/>
+			<Prp name="stacktext" type="S" value="LogDotedine"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="1078"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="[STATUS : PASS] Network Connection Status : Sucess , Machine Name VS4D27YR1  is connected to the newwork"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="41837.4778728935"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 7">
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="1078"/>
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="[STATUS : PASS] Create Host Connection  : Sucess , Host Name  IVLS  is created for Remote Machine  VS66VD5M1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="41837.47804"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 8">
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="1078"/>
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="[STATUS : PASS] Create Job for Host  IVLS  Status : Sucess , Job   JOB_IVLS  is created  Sucessfully on Machine  VS66VD5M1 under Host  IVLS"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="41837.47804"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 10">
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="1078"/>
+			<Prp name="id" type="I" value="10"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="[STATUS : PASS] Network Connection Status : Sucess , Machine Name VSJ4NMDH1  is connected to the newwork"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="41837.4782023958"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="item 1">
+			<Prp name="line no" type="I" value="47"/>
+			<Prp name="stacktext" type="S" value="TestController"/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="n-0">
+			<Node name="data">
+				<Prp name="d-0" type="D" value="41837.4782052894"/>
+			</Node>
+			<Prp name="id" type="S" value="{5C4EF7C7-C2C9-43CB-85AE-66E5E6E35778}"/>
+			<Prp name="name" type="S" value="Date&amp;Time"/>
+			<Prp name="color" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="columnindex" type="I" value="0"/>
+			<Prp name="length" type="I" value="1"/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="isinteger" type="B" value="0"/>
+			<Prp name="countertype" type="I" value="4"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="62"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="  Reading Configutaion.XML file for setting Global Data"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="41837.4777067014"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="1078"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="[STATUS : PASS] Create Host Connection  : Sucess , Host Name  SIMULATOR  is created for Remote Machine  VS4D27YR1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="41837.4778743403"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 5">
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="1078"/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="[STATUS : PASS] Create Task for Job JOB_SIMULATOR  Status : Sucess , Task    TASK_SIMULATOR  is created  Sucessfully on Host SIMULATOR  for Job JOB_SIMULATOR"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="41837.4778745255"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{BDF3B3F5-603F-4EF3-9392-DB27EA0A609E}"/>
+			<Prp name="unit 1" type="S" value="{946C8434-AFE4-4655-B9A2-8A7F34DD5BF9}"/>
+		</Node>
+		<Node name="item 2">
+			<Prp name="line no" type="I" value="1266"/>
+			<Prp name="stacktext" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 11">
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="stack end" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="1266"/>
+			<Prp name="id" type="I" value="11"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Error ---  Application Log File\\VS7RFCLH1\ivls_integration_automation\IVLS_Integration\TESTRESULT\LOGS\IVLS_Integration_LogReport_6172014112753.log   due to File not found"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="41837.4782032986"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="picture" type="S" value="Picture1.png"/>
+			<Prp name="stack beginning" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Prp name="status" type="I" value="2"/>
+		<Prp name="perfcounterslength" type="I" value="1"/>
+	</Node>
+</Nodes>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="child list">
+			<Node name="item0000000000">
+				<Node name="item data">
+					<Node name="child list">
+						<Node name="item0000000000">
+							<Node name="item data">
+								<Node name="settings"/>
+								<Prp name="action after run" type="I" value="0"/>
+								<Prp name="active" type="B" value="-1"/>
+								<Prp name="caption" type="S" value="TASK_SIMULATOR"/>
+								<Prp name="copy remote log mode" type="I" value="2"/>
+								<Prp name="host" type="S" value="{D9771A09-9EBA-4CC4-902D-390CD113571C}"/>
+								<Prp name="host timeout" type="I" value="10"/>
+								<Prp name="instances" type="I" value="1"/>
+								<Prp name="previous instance mode" type="I" value="0"/>
+								<Prp name="project path" type="S" value="\IVLS_AUTOMATION\IVLS_AUTOMATION.mds"/>
+								<Prp name="remote application" type="I" value="1"/>
+								<Prp name="signature" type="S" value="{23C4D44E-8AC2-4667-BAFD-DAD89D94804E}"/>
+								<Prp name="tag" type="S" value=""/>
+								<Prp name="test" type="S" value="IVLS_AUTOMATION\Script\SimulatorFunctions\verifyResultSentCount"/>
+								<Prp name="version" type="S" value="10.0"/>
+							</Node>
+							<Prp name="index" type="I" value="0"/>
+							<Prp name="key" type="S" value="{066E6372-8251-46B6-9C35-ACAD356BCD30}"/>
+							<Prp name="pluginname" type="S" value="Network Suite"/>
+							<Prp name="type" type="S" value="{23C4D44E-8AC2-4667-BAFD-DAD89D94804E}"/>
+							<Prp name="typename" type="S" value="Task"/>
+						</Node>
+					</Node>
+					<Node name="folders">
+						<Node name="folders"/>
+					</Node>
+					<Node name="settings"/>
+					<Prp name="active" type="B" value="-1"/>
+					<Prp name="caption" type="S" value="JOB_SIMULATOR"/>
+					<Prp name="signature" type="S" value="{E2AF080E-4F10-4DAC-8897-101FF5509E65}"/>
+					<Prp name="version" type="S" value="10.0"/>
+				</Node>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="key" type="S" value="{4BD6E739-1BAA-43BB-8116-063F11711CC8}"/>
+				<Prp name="pluginname" type="S" value="Network Suite"/>
+				<Prp name="type" type="S" value="{E2AF080E-4F10-4DAC-8897-101FF5509E65}"/>
+				<Prp name="typename" type="S" value="Job"/>
+			</Node>
+			<Node name="item0000000001">
+				<Node name="item data">
+					<Node name="child list">
+						<Node name="item0000000000">
+							<Node name="item data">
+								<Node name="settings"/>
+								<Prp name="action after run" type="I" value="0"/>
+								<Prp name="active" type="B" value="-1"/>
+								<Prp name="caption" type="S" value="TASK_IVLS"/>
+								<Prp name="copy remote log mode" type="I" value="2"/>
+								<Prp name="host" type="S" value="{2F5A8721-61AF-4F6F-85DF-F70E805794BF}"/>
+								<Prp name="host timeout" type="I" value="10"/>
+								<Prp name="instances" type="I" value="1"/>
+								<Prp name="previous instance mode" type="I" value="0"/>
+								<Prp name="project path" type="S" value="\IVLS_AUTOMATION\IVLS_AUTOMATION.mds"/>
+								<Prp name="remote application" type="I" value="1"/>
+								<Prp name="signature" type="S" value="{23C4D44E-8AC2-4667-BAFD-DAD89D94804E}"/>
+								<Prp name="tag" type="S" value=""/>
+								<Prp name="test" type="S" value="IVLS_AUTOMATION\Script\IVLSFunctions\NavigateHomeScreen"/>
+								<Prp name="version" type="S" value="10.0"/>
+							</Node>
+							<Prp name="index" type="I" value="0"/>
+							<Prp name="key" type="S" value="{7B81A5F5-D74E-46F9-AD03-FDFFF863E326}"/>
+							<Prp name="pluginname" type="S" value="Network Suite"/>
+							<Prp name="type" type="S" value="{23C4D44E-8AC2-4667-BAFD-DAD89D94804E}"/>
+							<Prp name="typename" type="S" value="Task"/>
+						</Node>
+					</Node>
+					<Node name="folders">
+						<Node name="folders"/>
+					</Node>
+					<Node name="settings"/>
+					<Prp name="active" type="B" value="-1"/>
+					<Prp name="caption" type="S" value="JOB_IVLS"/>
+					<Prp name="signature" type="S" value="{E2AF080E-4F10-4DAC-8897-101FF5509E65}"/>
+					<Prp name="version" type="S" value="10.0"/>
+				</Node>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="key" type="S" value="{FC09B8A5-C4BD-48C9-9575-EA6C5AD7D4C2}"/>
+				<Prp name="pluginname" type="S" value="Network Suite"/>
+				<Prp name="type" type="S" value="{E2AF080E-4F10-4DAC-8897-101FF5509E65}"/>
+				<Prp name="typename" type="S" value="Job"/>
+			</Node>
+		</Node>
+		<Node name="folders">
+			<Node name="folders"/>
+		</Node>
+		<Node name="settings"/>
+		<Prp name="signature" type="S" value="{54BD767E-85A4-491D-A3B2-EC88685BF3C8}"/>
+		<Prp name="version" type="S" value="10.0"/>
+	</Node>
+</Nodes>

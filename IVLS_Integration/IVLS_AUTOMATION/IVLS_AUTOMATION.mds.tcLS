@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="data">
+			<Node name="{4445b0ff-1c49-45d4-a816-f3250a41bdd2}">
+				<Node name="variables">
+					<Node name="datav3">
+						<Node name="var0">
+							<Node name="value">
+								<Prp name="strvalue" type="H" value="490056004C0053005F004100550054004F004D004100540049004F004E005C005300630072006900700074005C00530069006D0075006C00610074006F007200460075006E006300740069006F006E0073005C00"/>
+							</Node>
+							<Prp name="name" type="S" value="SimulatorTestScriptPath"/>
+						</Node>
+						<Node name="var1">
+							<Node name="value">
+								<Prp name="strvalue" type="H" value="5C005C005600530034004400320037005900520031005C004900520049005300530069006D0075006C00610074006F0072005C0064006100740061005C00"/>
+							</Node>
+							<Prp name="name" type="S" value="SimulatorXMLDataFilePath"/>
+						</Node>
+						<Node name="var2">
+							<Node name="value">
+								<Prp name="strvalue" type="H" value="5B00500061007400690065006E007400490044005D005B0043006C00690065006E007400490044005D00"/>
+							</Node>
+							<Prp name="name" type="S" value="InputData"/>
+						</Node>
+						<Node name="var3">
+							<Node name="value">
+								<Prp name="strvalue" type="H" value="500041005400490045004E0054004100550054004F004D004100540049004F004E00"/>
+							</Node>
+							<Prp name="name" type="S" value="PatientName"/>
+						</Node>
+						<Node name="var4">
+							<Node name="value">
+								<Prp name="strvalue" type="H" value="49004E0043004C0049004E0049004300"/>
+							</Node>
+							<Prp name="name" type="S" value="LabID"/>
+						</Node>
+						<Node name="var5">
+							<Node name="value">
+								<Prp name="strvalue" type="H" value=" "/>
+							</Node>
+							<Prp name="name" type="S" value="LABTESTNAME"/>
+						</Node>
+						<Node name="var6">
+							<Node name="value">
+								<Prp name="strvalue" type="H" value="3300390039003000"/>
+							</Node>
+							<Prp name="name" type="S" value="ProfileID"/>
+						</Node>
+						<Node name="var7">
+							<Node name="value">
+								<Prp name="strvalue" type="H" value="31003100330033003600"/>
+							</Node>
+							<Prp name="name" type="S" value="VisitTypeID"/>
+						</Node>
+						<Node name="var8">
+							<Node name="value">
+								<Prp name="strvalue" type="H" value="370032003600380038002D0063006100740061006C007900730074002E0078006D006C00"/>
+							</Node>
+							<Prp name="name" type="S" value="SimulatorTestResultFileName"/>
+						</Node>
+					</Node>
+					<Prp name="version" type="I" value="3"/>
+				</Node>
+			</Node>
+			<Node name="logs">
+				<Prp name="key" type="S" value="{9F28B23C-9B33-4239-A17D-9BD854B9EFB0}"/>
+				<Prp name="relpath" type="S" value="Log"/>
+			</Node>
+			<Node name="variables"/>
+		</Node>
+		<Prp name="signature" type="S" value="{49FC0C30-9EF7-4DBD-97A8-B7A00E79A2AF}"/>
+	</Node>
+</Nodes>

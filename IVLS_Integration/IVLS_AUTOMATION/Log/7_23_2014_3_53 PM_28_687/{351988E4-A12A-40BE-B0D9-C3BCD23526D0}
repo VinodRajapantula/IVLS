@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="stack"/>
+		<Node name="message 0">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="object right" type="I" value="502"/>
+					<Prp name="object bottom" type="I" value="33"/>
+					<Prp name="click point x" type="I" value="469"/>
+					<Prp name="line #" type="I" value="215"/>
+					<Prp name="click point y" type="I" value="19"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="image file name" type="S" value="visImage0.png"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="version" type="I" value="1"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="41843.8704738079"/>
+					<Prp name="object name" type="S" value="Sys.Process(&quot;javaw&quot;).JavaFXObject(&quot;Stage&quot;, &quot;&quot;).JavaFXObject(&quot;FawkesScene&quot;, &quot;&quot;).JavaFXObject(&quot;view&quot;).JavaFXObject(&quot;mainFrame&quot;).JavaFXObject(&quot;NavigationBar&quot;, &quot;&quot;).JavaFXObject(&quot;FawkesHBox&quot;, &quot;&quot;).JavaFXObject(&quot;navigation-bar-gray-button&quot;)"/>
+					<Prp name="object left" type="I" value="436"/>
+					<Prp name="object top" type="I" value="6"/>
+				</Node>
+			</Node>
+			<Prp name="remarks" type="S" value="A click at point (33, 13) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;javaw&quot;).JavaFXObject(&quot;Stage&quot;, &quot;&quot;).JavaFXObject(&quot;FawkesScene&quot;, &quot;&quot;).JavaFXObject(&quot;view&quot;).JavaFXObject(&quot;mainFrame&quot;).JavaFXObject(&quot;NavigationBar&quot;, &quot;&quot;).JavaFXObject(&quot;FawkesHBox&quot;, &quot;&quot;).JavaFXObject(&quot;navigation-bar-gray-button&quot;)"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="date" type="D" value="41843.6621417361"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="215"/>
+			<Prp name="as html" type="B" value="0"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{A5DEA599-5429-4396-B1E9-115DE9F8F3B8}"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="n-0">
+			<Node name="data">
+				<Prp name="d-0" type="D" value="41843.6621417361"/>
+			</Node>
+			<Prp name="color" type="I" value="0"/>
+			<Prp name="id" type="S" value="{5C4EF7C7-C2C9-43CB-85AE-66E5E6E35778}"/>
+			<Prp name="columnindex" type="I" value="0"/>
+			<Prp name="length" type="I" value="1"/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="isinteger" type="B" value="0"/>
+			<Prp name="name" type="S" value="Date&amp;Time"/>
+			<Prp name="countertype" type="I" value="4"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+		<Prp name="perfcounterslength" type="I" value="1"/>
+	</Node>
+</Nodes>

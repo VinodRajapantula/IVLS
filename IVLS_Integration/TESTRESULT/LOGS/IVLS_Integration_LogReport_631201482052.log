@@ -1,0 +1,221 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!   I V L S AUTOMATION  - TEST EXECUTION LOGS  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+TEST ENVIRONMENT
+................................................................................................................................
+S.No	| MACHINE NAME	| APPLICATION NAME	| BUILD VER.       	| EXECUTED ON		| EXECUTED BY	| EXECUTED FROM	
+................................................................................................................................
+1	| VS4D27YR1	| IRIS-1.00.0154a.jar	| IRIS-1.00.0154a	| 7/31/2014 @ 8:20:52	| Administrator	| VS7RFCLH1
+2	| VS9HWGYR1	| Idexx Vet Lab Station | IVLS 4.0		| 7/31/2014 @ 8:20:52	| Administrator	| VS7RFCLH1
+3	| VSJ4NMDH1	| Corner Stone		| NA			| 7/31/2014 @ 8:20:52	| Administrator	| VS7RFCLH1
+................................................................................................................................
+
+CHECKING NETWORK CONNECTION OF REMOTE MACHINE(S) FOR CREATING HOST CONNECTION
+
+[LOGS: @ 8:21:6]--[STATUS : PASS] Network Connection Status : Success , Machine Name VS4D27YR1  is connected to the newwork
+[LOGS: @ 8:21:6]--[STATUS : PASS] Create Host Connection Status  : Success , Host Name  SIMULATOR  is created for Remote Machine  VS4D27YR1
+[LOGS: @ 8:21:6]--[STATUS : PASS] Create Job for Host  SIMULATOR  Status : Success , Job   JOB_SIMULATOR  is created  Successfully on Machine  VS4D27YR1 under Host  SIMULATOR
+[LOGS: @ 8:21:6]--[STATUS : PASS] Create Task for Job JOB_SIMULATOR  Status : Success , Task    TASK_SIMULATOR  is created  Successfully on Host SIMULATOR  for Job JOB_SIMULATOR
+[LOGS: @ 8:21:20]--[STATUS : PASS] Network Connection Status : Success , Machine Name VS9HWGYR1  is connected to the newwork
+[LOGS: @ 8:21:20]--[STATUS : PASS] Create Host Connection Status  : Success , Host Name  IVLS  is created for Remote Machine  VS9HWGYR1
+[LOGS: @ 8:21:20]--[STATUS : PASS] Create Job for Host  IVLS  Status : Success , Job   JOB_IVLS  is created  Successfully on Machine  VS9HWGYR1 under Host  IVLS
+[LOGS: @ 8:21:20]--[STATUS : PASS] Create Task for Job JOB_IVLS  Status : Success , Task    TASK_IVLS  is created  Successfully on Host IVLS  for Job JOB_IVLS
+[LOGS: @ 8:21:34]--[STATUS : PASS] Network Connection Status : Success , Machine Name VSJ4NMDH1  is connected to the newwork
+................................................................................................................................
+ TEST SCENARIO EXECUTION.
+--------------------------------------------------------------------------------------------------------------------------------
+	Scenario Id     : TS001
+	Scenario Name   : "Verify Lab Test Results in Corner Stone Application sent from IVLS Application "
+	Iteration Count : 1
+--------------------------------------------------------------------------------------------------------------------------------
+    Test Scenario Execution Started.......
+--------------------------------------------------------------------------------------------------------------------------------
+  Execution Started For Iteration 1
+  Executing... Test Scenario : TS001 Step Id :1  Step Descrtiption : Create Lab Request in Corner Stone Application
+BUSINESS FUNCTION : CreateLabRequestCS EXECUTION STARTED.....ON CORNERSTONE MACHINE
+
+ Executing CORNERSTONE  on  LOCAL  Machine
+
+[LOGS: @ 8:21:35]--[STATUS : PASS]   Sucessfully executed query INSERT INTO LAB_REQUEST_HEADER (lab_id ,req_id,req_seq_nbr,clientid,patientid,staffid,staffsequence,sample_drawn_by,date_time_ordered,instructions,visittype_id,sample_source,change_sync_increment,create_sync_increment,from_database_id,suspend_update_trigger,labrexx_xml,practiceid,online_request_flag,antech_pims_req_id,critical_request_flag,no_of_containers ,container_size,no_of_specimens,spl_stain,requested_pathologists,source,biopsytype_excisional,biopsytype_incisional,biopsytype_needle,biopsytype_endoscopic,tissues_submitted,cytology_accession_no,patient_history,temporary_sex,temporary_species,temporary_breed,practice_req_id) Values('INCLINIC','35245','1','IVLS1234','52933','CS','1','null','2014-07-31 08:21:34','null','11336','null','0','0','null','N','null','1','0','null','0','0','null','0','No','null','null','0', '0','0','0','No','null','null','null','null','null','0')
+[LOGS: @ 8:21:35]--[STATUS : PASS]   Sucessfully executed query INSERT INTO LAB_PROFILES_ON_ORDER (clientid,patientid,lab_id,req_id,req_seq_nbr,sequence,profile_id,date_time_ordered,change_sync_increment,create_sync_increment,from_database_id,suspend_update_trigger)Values('IVLS1234','52933','INCLINIC','35245','1','1','3990','2014-07-31 08:21:34','0','0','null','N')
+[LOGS: @ 8:21:35]--[STATUS : PASS]   Sucessfully verified Lab request existence in CS database with  query select count(*)  from lab_request_header where req_id='35245'
+[LOGS: @ 8:21:35]--[STATUS : PASS]   Sucessfully Created Lab Request in Corner Stone Database 
+
+BUSINESS FUNCTION : CreateLabRequestCS EXECUTION COMPLETED
+
+................................................................................................................................
+  Execution Started For Iteration 1
+  Executing... Test Scenario : TS001 Step Id :2  Step Descrtiption : Restart IVLS MAchine to refresh all the services
+BUSINESS FUNCTION : ReStartIVLSApplication EXECUTION STARTED.....ON IVLS MACHINE
+
+ Executing IVLS  on  REMOTE  Machine
+
+[LOGS: @ 8:24:9]--[STATUS : PASS] Sucessfully Clicked on IVLS ReStart button
+[LOGS: @ 8:24:16]--[STATUS : PASS] Sucessfully Clicked on ReStart Confirmation button
+
+BUSINESS FUNCTION : ReStartIVLSApplication EXECUTION COMPLETED
+
+................................................................................................................................
+  Execution Started For Iteration 1
+  Executing... Test Scenario : TS001 Step Id :3  Step Descrtiption : Check IVLS Machine Connectivity
+BUSINESS FUNCTION : CheckIVLSMachineConnectivity EXECUTION STARTED.....ON CORNERSTONE MACHINE
+
+ Executing CORNERSTONE  on  LOCAL  Machine
+
+
+BUSINESS FUNCTION : CheckIVLSMachineConnectivity EXECUTION COMPLETED
+
+................................................................................................................................
+  Execution Started For Iteration 1
+  Executing... Test Scenario : TS001 Step Id :4  Step Descrtiption : Wait Until IVLS Application is Loaded
+BUSINESS FUNCTION : WaitUntilReadyIVLS EXECUTION STARTED.....ON IVLS MACHINE
+
+ Executing IVLS  on  REMOTE  Machine
+
+[LOGS: @ 8:28:38]--[STATUS : PASS] IVLS Application is sucessfully loaded......
+
+BUSINESS FUNCTION : WaitUntilReadyIVLS EXECUTION COMPLETED
+
+................................................................................................................................
+  Execution Started For Iteration 1
+  Executing... Test Scenario : TS001 Step Id :5  Step Descrtiption : Launch Simulator Application
+BUSINESS FUNCTION : OpenSimulatorApp EXECUTION STARTED.....ON SIMULATOR MACHINE
+
+ Executing SIMULATOR  on  REMOTE  Machine
+
+[LOGS: @ 8:42:56]--[STATUS : MESSAGE]  Open Command Prompt Window to launch Simulator
+[LOGS: @ 8:42:59]--[STATUS : MESSAGE] Sucessfully launched CMD prompt to Run Simulator Application 
+[LOGS: @ 8:42:59]--[STATUS : MESSAGE] Closing The Command Prompt Window
+[LOGS: @ 8:42:59]--[STATUS : MESSAGE] Waiting for application to launch..........
+[LOGS: @ 8:43:7]--[STATUS : PASS] VetLab Simulator Launched Sucessfully
+
+BUSINESS FUNCTION : OpenSimulatorApp EXECUTION COMPLETED
+
+................................................................................................................................
+  Execution Started For Iteration 1
+  Executing... Test Scenario : TS001 Step Id :6  Step Descrtiption : Create Instrument(s) in Simulator 
+BUSINESS FUNCTION : CreateInstrument EXECUTION STARTED.....ON SIMULATOR MACHINE
+
+ Executing SIMULATOR  on  REMOTE  Machine
+
+[LOGS: @ 8:43:21]--[STATUS : PASS] Selected Instrument Catalyst Dx , is in ready State
+
+BUSINESS FUNCTION : CreateInstrument EXECUTION COMPLETED
+
+................................................................................................................................
+  Execution Started For Iteration 1
+  Executing... Test Scenario : TS001 Step Id :7  Step Descrtiption : Select Patient(s) from pending List to run test
+BUSINESS FUNCTION : RunTestForPendingPatient EXECUTION STARTED.....ON IVLS MACHINE
+
+ Executing IVLS  on  REMOTE  Machine
+
+[LOGS: @ 8:29:27]--[STATUS : PASS] Clicked on Pending Tab
+[LOGS: @ 8:29:29]--[STATUS : PASS] Sucessfully Selected Patient PATIENTAUTOMATION whose test name is AUTOMATIONLABTEST  , from the Patient Pending List view
+[LOGS: @ 8:29:31]--[STATUS : PASS] Sucessfully Clicked on Run Button
+
+BUSINESS FUNCTION : RunTestForPendingPatient EXECUTION COMPLETED
+
+................................................................................................................................
+  Execution Started For Iteration 1
+  Executing... Test Scenario : TS001 Step Id :8  Step Descrtiption : Capture Requisition  ID details from Select Instrument Screen in IVLS Application 
+BUSINESS FUNCTION : GetRequisitionID EXECUTION STARTED.....ON IVLS MACHINE
+
+ Executing IVLS  on  REMOTE  Machine
+
+[LOGS: @ 8:29:53]--[STATUS : PASS] Sucessfully Captured Capture Requisition ID 35245 from Select Instrument Screen
+
+BUSINESS FUNCTION : GetRequisitionID EXECUTION COMPLETED
+
+................................................................................................................................
+  Execution Started For Iteration 1
+  Executing... Test Scenario : TS001 Step Id :9  Step Descrtiption : Create Test Result XML file in Simulator data folder based on Requisition Id for selected Instrument
+BUSINESS FUNCTION : CreateSimulatorTestResultXMLFile EXECUTION STARTED.....ON CORNERSTONE MACHINE
+
+ Executing CORNERSTONE  on  LOCAL  Machine
+
+[LOGS: @ 8:27:43]--[STATUS : PASS]  Sucessfully Created Simulator Result XML file in Simulator Data Folder with name 35245-catalyst.xml
+
+BUSINESS FUNCTION : CreateSimulatorTestResultXMLFile EXECUTION COMPLETED
+
+................................................................................................................................
+  Execution Started For Iteration 1
+  Executing... Test Scenario : TS001 Step Id :10  Step Descrtiption : Select Instruments to Run Test
+BUSINESS FUNCTION : SelectInstrumentToRunTests EXECUTION STARTED.....ON IVLS MACHINE
+
+ Executing IVLS  on  REMOTE  Machine
+
+[LOGS: @ 8:30:7]--[STATUS : PASS] Sucessfully selected Instrument Catalyst Dx  from the Instrument Pane
+[LOGS: @ 8:30:7]--[STATUS : PASS] Sucessfully Clicked on RUN button
+[LOGS: @ 8:30:21]--[STATUS : PASS] Sucessfully Clicked on View Reults Button
+
+BUSINESS FUNCTION : SelectInstrumentToRunTests EXECUTION COMPLETED
+
+................................................................................................................................
+  Execution Started For Iteration 1
+  Executing... Test Scenario : TS001 Step Id :11  Step Descrtiption : Verify Request Received Count in Simulator
+BUSINESS FUNCTION : verifyResultRequestsCount EXECUTION STARTED.....ON SIMULATOR MACHINE
+
+ Executing SIMULATOR  on  REMOTE  Machine
+
+[LOGS: @ 8:44:41]--[STATUS : MESSAGE]  Total No. Of Results Request received to Simulator from IVLS Lab Station is   1
+[LOGS: @ 8:44:41]--[STATUS : PASS] Sucessfully Verified Result Request Count is displaying as expected Count  1
+
+BUSINESS FUNCTION : verifyResultRequestsCount EXECUTION COMPLETED
+
+................................................................................................................................
+  Execution Started For Iteration 1
+  Executing... Test Scenario : TS001 Step Id :12  Step Descrtiption : Verify Result Sent Count in Simulator
+BUSINESS FUNCTION : verifyResultSentCount EXECUTION STARTED.....ON SIMULATOR MACHINE
+
+ Executing SIMULATOR  on  REMOTE  Machine
+
+[LOGS: @ 8:44:51]--[STATUS : MESSAGE]  Total No. Of Results Sent by Simulator to IVLS Lab Station is  1
+[LOGS: @ 8:44:51]--[STATUS : PASS] Sucessfully Verified Result Sent Count is displaying as expected Count  1
+
+BUSINESS FUNCTION : verifyResultSentCount EXECUTION COMPLETED
+
+................................................................................................................................
+  Execution Started For Iteration 1
+  Executing... Test Scenario : TS001 Step Id :13  Step Descrtiption : Verify IVLS test results with  Simulator sent test results
+BUSINESS FUNCTION : VerifyLabResultsInIVLS EXECUTION STARTED.....ON IVLS MACHINE
+
+ Executing IVLS  on  REMOTE  Machine
+
+[LOGS: @ 8:30:56]--[STATUS : PASS]  Successfully Verified IVLS Test Results , Test Name : ALB and Test Result : 3.2  with Simulator sent test results
+[LOGS: @ 8:30:57]--[STATUS : PASS]  Successfully Verified IVLS Test Results , Test Name : ALT and Test Result : 31  with Simulator sent test results
+[LOGS: @ 8:30:57]--[STATUS : PASS]  Successfully Verified IVLS Test Results , Test Name : CREA and Test Result : 1.1  with Simulator sent test results
+[LOGS: @ 8:30:58]--[STATUS : PASS]  Successfully Verified IVLS Test Results , Test Name : ALKP and Test Result : 75  with Simulator sent test results
+[LOGS: @ 8:30:59]--[STATUS : PASS]  Successfully Verified IVLS Test Results , Test Name : GLU and Test Result : 85  with Simulator sent test results
+[LOGS: @ 8:30:59]--[STATUS : PASS]  Successfully Verified IVLS Test Results , Test Name : TP and Test Result : 6.2  with Simulator sent test results
+[LOGS: @ 8:31:0]--[STATUS : PASS]  Successfully Verified IVLS Test Results , Test Name : GLOB and Test Result : 3.4  with Simulator sent test results
+
+BUSINESS FUNCTION : VerifyLabResultsInIVLS EXECUTION COMPLETED
+
+................................................................................................................................
+  Execution Started For Iteration 1
+  Executing... Test Scenario : TS001 Step Id :14  Step Descrtiption : Navigate to IVLS Home Screen
+BUSINESS FUNCTION : NavigateHomeScreen EXECUTION STARTED.....ON IVLS MACHINE
+
+ Executing IVLS  on  REMOTE  Machine
+
+[LOGS: @ 8:31:13]--[STATUS : PASS] Sucessfully Navigated to IVLS Home Screen
+
+BUSINESS FUNCTION : NavigateHomeScreen EXECUTION COMPLETED
+
+................................................................................................................................
+  Execution Started For Iteration 1
+  Executing... Test Scenario : TS001 Step Id :15  Step Descrtiption : Verify Lab Results in Corner Stone DataBAse
+BUSINESS FUNCTION : verifyLabResultStatusCS EXECUTION STARTED.....ON CORNERSTONE MACHINE
+
+ Executing CORNERSTONE  on  LOCAL  Machine
+
+[LOGS: @ 8:29:4]--[STATUS : MESSAGE]   Sucessfully Connected to Corner Stone Database
+[LOGS: @ 8:29:4]--[STATUS : MESSAGE]  PADITENT ID :52933 PATIENT NAME PATIENTAUTOMATION  LAB RESULT STATUS : 
+[LOGS: @ 8:29:4]--[STATUS : FAIL]   Verification Failed , Lab Test Result status in Corner Stone Database for Test Ran in IVLS is not completed result is displaying as 
+
+BUSINESS FUNCTION : verifyLabResultStatusCS EXECUTION COMPLETED
+
+................................................................................................................................
+--------------------------------------------------------------------------------------------------------------------------------
+    Test Scenario Execution Completed...........
+--------------------------------------------------------------------------------------------------------------------------------

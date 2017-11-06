@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="child list">
+			<Node name="item0000000000">
+				<Node name="item data">
+					<Node name="settings"/>
+					<Prp name="address" type="S" value="VS4D27YR1"/>
+					<Prp name="base path" type="S" value="C:\IVLS\BACKUP_IVLS\"/>
+					<Prp name="caption" type="S" value="SIMULATOR"/>
+					<Prp name="domain" type="S" value=""/>
+					<Prp name="logonmode" type="I" value="0"/>
+					<Prp name="password" type="S" value="2E1D778CD74FD5161DF617D8FCA98D1C0CCF0CBFE4A55BE7F67E"/>
+					<Prp name="signature" type="S" value="{4C283132-D38F-4C25-B72C-75AD0D8A3093}"/>
+					<Prp name="source" type="S" value=""/>
+					<Prp name="user name" type="S" value="IDEXX"/>
+					<Prp name="version" type="S" value="10.0"/>
+				</Node>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="key" type="S" value="{D9771A09-9EBA-4CC4-902D-390CD113571C}"/>
+				<Prp name="pluginname" type="S" value="Network Suite"/>
+				<Prp name="type" type="S" value="{4C283132-D38F-4C25-B72C-75AD0D8A3093}"/>
+				<Prp name="typename" type="S" value="Host"/>
+			</Node>
+			<Node name="item0000000001">
+				<Node name="item data">
+					<Node name="settings"/>
+					<Prp name="address" type="S" value="VS9HWGYR1"/>
+					<Prp name="base path" type="S" value="C:\IVLS\BACKUP_IVLS\"/>
+					<Prp name="caption" type="S" value="IVLS"/>
+					<Prp name="domain" type="S" value=""/>
+					<Prp name="logonmode" type="I" value="0"/>
+					<Prp name="password" type="S" value="2E1D878ED74FED137DF1F7DF9CAA951A4CCB94BDCCA4FF93ED1D9D923AFF"/>
+					<Prp name="signature" type="S" value="{4C283132-D38F-4C25-B72C-75AD0D8A3093}"/>
+					<Prp name="source" type="S" value=""/>
+					<Prp name="user name" type="S" value="VetStation"/>
+					<Prp name="version" type="S" value="10.0"/>
+				</Node>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="key" type="S" value="{2F5A8721-61AF-4F6F-85DF-F70E805794BF}"/>
+				<Prp name="pluginname" type="S" value="Network Suite"/>
+				<Prp name="type" type="S" value="{4C283132-D38F-4C25-B72C-75AD0D8A3093}"/>
+				<Prp name="typename" type="S" value="Host"/>
+			</Node>
+		</Node>
+		<Node name="folders">
+			<Node name="folders"/>
+		</Node>
+		<Node name="settings"/>
+		<Prp name="signature" type="S" value="{1478418C-D916-49E9-8E78-BF4561C164F9}"/>
+		<Prp name="version" type="S" value="10.0"/>
+	</Node>
+</Nodes>

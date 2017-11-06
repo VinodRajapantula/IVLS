@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="child list">
+			<Node name="item0000000000">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="LIBRARY\BUSINESSFUNCTIONS\CornerStoneFunctions.sj"/>
+				</Node>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="key" type="S" value="{0F9140A8-1830-49DA-BD19-E263BBC8F08B}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="item0000000001">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="LIBRARY\BUSINESSFUNCTIONS\IVLSFunctions.sj"/>
+				</Node>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="key" type="S" value="{A5DEA599-5429-4396-B1E9-115DE9F8F3B8}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="item0000000002">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="LIBRARY\BUSINESSFUNCTIONS\SimulatorFunctions.sj"/>
+				</Node>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="key" type="S" value="{51A1CBB6-77FF-4E7F-BF40-D31A6D747A7D}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="item0000000003">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="LIBRARY\COMMONFUNCTIONS\Utility.sj"/>
+				</Node>
+				<Prp name="index" type="I" value="3"/>
+				<Prp name="key" type="S" value="{BDF3B3F5-603F-4EF3-9392-DB27EA0A609E}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+			<Node name="item0000000004">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="TESTCONTROLLER\TestController.sj"/>
+				</Node>
+				<Prp name="index" type="I" value="4"/>
+				<Prp name="key" type="S" value="{946C8434-AFE4-4655-B9A2-8A7F34DD5BF9}"/>
+				<Prp name="pluginname" type="S" value="Script"/>
+				<Prp name="type" type="S" value="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}"/>
+				<Prp name="typename" type="S" value="Script Unit"/>
+			</Node>
+		</Node>
+		<Node name="folders">
+			<Node name="folders">
+				<Node name="folder0000000000">
+					<Node name="folders">
+						<Node name="folder0000000000">
+							<Node name="folders"/>
+							<Node name="references">
+								<Node name="ref0000000000">
+									<Prp name="index" type="I" value="0"/>
+									<Prp name="key" type="S" value="{0F9140A8-1830-49DA-BD19-E263BBC8F08B}"/>
+								</Node>
+								<Node name="ref0000000001">
+									<Prp name="index" type="I" value="1"/>
+									<Prp name="key" type="S" value="{A5DEA599-5429-4396-B1E9-115DE9F8F3B8}"/>
+								</Node>
+								<Node name="ref0000000002">
+									<Prp name="index" type="I" value="2"/>
+									<Prp name="key" type="S" value="{51A1CBB6-77FF-4E7F-BF40-D31A6D747A7D}"/>
+								</Node>
+							</Node>
+							<Prp name="caption" type="S" value="BUSINESSFUNCTIONS"/>
+							<Prp name="description" type="S" value="A logical folder that is used to organize project items and elements."/>
+							<Prp name="index" type="I" value="0"/>
+							<Prp name="moniker" type="S" value=""/>
+						</Node>
+						<Node name="folder0000000001">
+							<Node name="folders"/>
+							<Node name="references">
+								<Node name="ref0000000000">
+									<Prp name="index" type="I" value="0"/>
+									<Prp name="key" type="S" value="{60CD9446-FA98-4884-A3BC-C9E806645F9A}"/>
+								</Node>
+								<Node name="ref0000000001">
+									<Prp name="index" type="I" value="1"/>
+									<Prp name="key" type="S" value="{BDF3B3F5-603F-4EF3-9392-DB27EA0A609E}"/>
+								</Node>
+							</Node>
+							<Prp name="caption" type="S" value="COMMONFUNCTIONS"/>
+							<Prp name="description" type="S" value="A logical folder that is used to organize project items and elements."/>
+							<Prp name="index" type="I" value="1"/>
+							<Prp name="moniker" type="S" value=""/>
+						</Node>
+					</Node>
+					<Node name="references"/>
+					<Prp name="caption" type="S" value="LIBRARY"/>
+					<Prp name="description" type="S" value="A logical folder that is used to organize project items and elements."/>
+					<Prp name="index" type="I" value="0"/>
+					<Prp name="moniker" type="S" value=""/>
+				</Node>
+				<Node name="folder0000000001">
+					<Node name="folders"/>
+					<Node name="references">
+						<Node name="ref0000000000">
+							<Prp name="index" type="I" value="0"/>
+							<Prp name="key" type="S" value="{40E6F223-D710-4BB7-A430-AD18A70DE6E7}"/>
+						</Node>
+						<Node name="ref0000000001">
+							<Prp name="index" type="I" value="1"/>
+							<Prp name="key" type="S" value="{946C8434-AFE4-4655-B9A2-8A7F34DD5BF9}"/>
+						</Node>
+					</Node>
+					<Prp name="caption" type="S" value="TESTCONTROLLER"/>
+					<Prp name="description" type="S" value="A logical folder that is used to organize project items and elements."/>
+					<Prp name="index" type="I" value="1"/>
+					<Prp name="moniker" type="S" value=""/>
+				</Node>
+			</Node>
+		</Node>
+		<Node name="settings"/>
+		<Prp name="signature" type="S" value="{9252F941-DB23-4FCA-AA50-858B33BB4A19}"/>
+		<Prp name="version" type="S" value="10.0"/>
+	</Node>
+</Nodes>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="analysis">
+			<Prp name="key" type="S" value="{B73965B1-A015-45E2-87D3-5FB076D71A67}"/>
+		</Node>
+		<Node name="child list">
+			<Node name="item0000000000">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="IVLS_AUTOMATION\IVLS_AUTOMATION.mds"/>
+				</Node>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="key" type="S" value="{08B3ACF9-3D97-496A-948F-CEFA6B2710DC}"/>
+				<Prp name="pluginname" type="S" value=""/>
+				<Prp name="type" type="S" value="{362A8EE5-675E-43A9-869D-06ECE80B0CB4}"/>
+				<Prp name="typename" type="S" value="Project"/>
+			</Node>
+		</Node>
+		<Node name="files">
+			<Node name="ivls_automation\ivls_automation.mds">
+				<Prp name="relpath" type="S" value="IVLS_AUTOMATION\IVLS_AUTOMATION.mds"/>
+			</Node>
+		</Node>
+		<Node name="folders">
+			<Node name="folders"/>
+		</Node>
+		<Node name="scc"/>
+		<Node name="settings">
+			<Node name="{5a85e200-b5d2-4f74-972a-0221f2956a19}">
+				<Prp name="type" type="I" value="5"/>
+				<Prp name="value" type="S" value="Log"/>
+			</Node>
+			<Prp name="key" type="S" value="{A4735FAD-E52A-46EC-8AED-412345A4B331}"/>
+			<Prp name="settingsversion" type="S" value="10.20"/>
+		</Node>
+		<Node name="test data">
+			<Node name="child list">
+				<Node name="item0000000000">
+					<Prp name="description" type="S" value=""/>
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="index" type="I" value="0"/>
+					<Prp name="key" type="S" value="{08B3ACF9-3D97-496A-948F-CEFA6B2710DC}"/>
+					<Prp name="stoponerror" type="B" value="-1"/>
+					<Prp name="timeout" type="I" value="0"/>
+				</Node>
+			</Node>
+			<Prp name="key" type="S" value="{3105D625-9960-4B98-9F38-6DE3793EFE5D}"/>
+		</Node>
+		<Node name="variables">
+			<Node name="datav3">
+				<Node name="var0">
+					<Node name="defvalue">
+						<Prp name="strvalue" type="H" value=" "/>
+					</Node>
+					<Prp name="category" type="H" value=" "/>
+					<Prp name="descr" type="H" value=" "/>
+					<Prp name="local" type="B" value="-1"/>
+					<Prp name="name" type="S" value="Test"/>
+					<Prp name="type" type="S" value="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}"/>
+				</Node>
+				<Node name="var1">
+					<Node name="defvalue">
+						<Prp name="strvalue" type="H" value=" "/>
+					</Node>
+					<Prp name="category" type="H" value=" "/>
+					<Prp name="descr" type="H" value=" "/>
+					<Prp name="local" type="B" value="-1"/>
+					<Prp name="name" type="S" value="SimulatorBasePath"/>
+					<Prp name="type" type="S" value="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}"/>
+				</Node>
+				<Node name="var2">
+					<Node name="defvalue">
+						<Prp name="strvalue" type="H" value=" "/>
+					</Node>
+					<Prp name="category" type="H" value=" "/>
+					<Prp name="descr" type="H" value=" "/>
+					<Prp name="local" type="B" value="-1"/>
+					<Prp name="name" type="S" value="SimulatorUserName"/>
+					<Prp name="type" type="S" value="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}"/>
+				</Node>
+				<Node name="var3">
+					<Node name="defvalue">
+						<Prp name="strvalue" type="H" value=" "/>
+					</Node>
+					<Prp name="category" type="H" value=" "/>
+					<Prp name="descr" type="H" value=" "/>
+					<Prp name="local" type="B" value="-1"/>
+					<Prp name="name" type="S" value="SimulatorUserPWD"/>
+					<Prp name="type" type="S" value="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}"/>
+				</Node>
+				<Node name="var4">
+					<Node name="defvalue">
+						<Prp name="strvalue" type="H" value=" "/>
+					</Node>
+					<Prp name="category" type="H" value=" "/>
+					<Prp name="descr" type="H" value=" "/>
+					<Prp name="local" type="B" value="-1"/>
+					<Prp name="name" type="S" value="IVLSUserName"/>
+					<Prp name="type" type="S" value="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}"/>
+				</Node>
+				<Node name="var5">
+					<Node name="defvalue">
+						<Prp name="boolvalue" type="B" value="0"/>
+					</Node>
+					<Prp name="category" type="H" value=" "/>
+					<Prp name="descr" type="H" value=" "/>
+					<Prp name="local" type="B" value="-1"/>
+					<Prp name="name" type="S" value="IVLSUserPWD"/>
+					<Prp name="type" type="S" value="{D25FDC80-E78F-4209-88B6-6FE2B0771206}"/>
+				</Node>
+				<Node name="var6">
+					<Node name="defvalue">
+						<Prp name="strvalue" type="H" value=" "/>
+					</Node>
+					<Prp name="category" type="H" value=" "/>
+					<Prp name="descr" type="H" value=" "/>
+					<Prp name="local" type="B" value="-1"/>
+					<Prp name="name" type="S" value="IVLSBasePath"/>
+					<Prp name="type" type="S" value="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}"/>
+				</Node>
+				<Node name="var7">
+					<Node name="defvalue">
+						<Prp name="strvalue" type="H" value=" "/>
+					</Node>
+					<Prp name="category" type="H" value=" "/>
+					<Prp name="descr" type="H" value=" "/>
+					<Prp name="local" type="B" value="-1"/>
+					<Prp name="name" type="S" value="TestScenarioID"/>
+					<Prp name="type" type="S" value="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}"/>
+				</Node>
+				<Node name="var8">
+					<Node name="defvalue">
+						<Prp name="strvalue" type="H" value=" "/>
+					</Node>
+					<Prp name="category" type="H" value=" "/>
+					<Prp name="descr" type="H" value=" "/>
+					<Prp name="local" type="B" value="-1"/>
+					<Prp name="name" type="S" value="SimulatorXMLDataFilePath"/>
+					<Prp name="type" type="S" value="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}"/>
+				</Node>
+			</Node>
+			<Prp name="key" type="S" value="{99D67897-F056-4269-B264-D35F58410414}"/>
+			<Prp name="version" type="I" value="3"/>
+		</Node>
+		<Prp name="key" type="S" value="{7CED10A0-E990-438B-A4ED-CEE2A3A1B4F0}"/>
+		<Prp name="signature" type="S" value="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}"/>
+		<Prp name="version" type="S" value="10.0"/>
+	</Node>
+</Nodes>

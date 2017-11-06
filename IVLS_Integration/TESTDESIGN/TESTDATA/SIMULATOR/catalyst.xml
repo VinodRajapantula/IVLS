@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+        Default results for Catalyst DX.
+-->
+
+<ResultSet>
+    <results>
+    	<Result>
+            <assay>
+                <name>ALB</name>
+            </assay>
+            <type>N</type>
+            <value>3.2</value>
+    	</Result>
+		<Result>
+            <assay>
+                <name>ALT</name>
+            </assay>
+            <type>N</type>
+            <value>31</value>
+    	</Result>
+		<Result>
+            <assay>
+                <name>CREA</name>
+            </assay>
+            <type>N</type>
+            <value>1.1</value>
+    	</Result>
+		<Result>
+            <assay>
+                <name>ALKP</name>
+            </assay>
+            <type>N</type>
+            <value>75</value>
+    	</Result>
+		<Result>
+            <assay>
+                <name>GLU</name>
+            </assay>
+            <type>N</type>
+            <value>85</value>
+    	</Result>
+		<Result>
+            <assay>
+                <name>TP</name>
+            </assay>
+            <type>N</type>
+            <value>6.2</value>
+    	</Result>
+		<Result>
+            <assay>
+                <name>GLOB</name>
+            </assay>
+            <type>N</type>
+            <value>3.4</value>
+    	</Result>
+    </results>
+    <delayType>R</delayType>
+    <delayAmount>5000</delayAmount>
+    <action>results</action>
+</ResultSet>

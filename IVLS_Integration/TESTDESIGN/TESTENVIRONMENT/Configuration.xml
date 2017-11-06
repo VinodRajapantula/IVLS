@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<!-- Project Execution Settings -->
+	<ProjectSetup>
+		<ProjectName>IVLS INTEGRATION</ProjectName>
+		<ProjectPath>\IVLS_AUTOMATION\IVLS_AUTOMATION.mds</ProjectPath>
+		<!-- Framework Configuration  Settings -->
+		<FrameworkFolderPath>\\VS7RFCLH1\ivls_integration_automation\IVLS_Integration</FrameworkFolderPath>
+		<ApplicationLogsFolderPath>\\VS7RFCLH1\ivls_integration_automation\IVLS_Integration\TESTRESULT\LOGS</ApplicationLogsFolderPath>
+		<!-- Simulator Application details -->
+		<SimulatorAppPath>C:\IRISSimulator</SimulatorAppPath>
+		<SimulatorAppName>IRIS-1.00.0154a.jar</SimulatorAppName>
+		<SimulatorBuildVersion>IRIS-1.00.0154a</SimulatorBuildVersion>
+		<SimulatorMachineName>VS4D27YR1</SimulatorMachineName>
+		<SimulatorTestScriptPath>IVLS_AUTOMATION\Script\SimulatorFunctions\</SimulatorTestScriptPath>
+		<SimulatorXMLDataFilePath>\\VS4D27YR1\IRISSimulator\data\</SimulatorXMLDataFilePath>
+		<!-- IVLS Application details -->
+		<IVLSAppName>Idexx Vet Lab Station</IVLSAppName>
+		<IVLSBuildVersion>IVLS 4.0</IVLSBuildVersion>
+		<IVLSMachineName>VS9HWGYR1</IVLSMachineName>
+		<IVLSTestScriptPath>IVLS_AUTOMATION\Script\IVLSFunctions\</IVLSTestScriptPath>
+		<!-- Corner Stone Application details -->
+		<CornerStoneAppName>Corner Stone</CornerStoneAppName>
+		<CornerStoneBuildVersion>NA</CornerStoneBuildVersion>
+		<CornerStoneMachineName>VSJ4NMDH1</CornerStoneMachineName>
+		<!-- Global Wait Settings-->
+		<MaxWaitTimeInMiliSecs>60000</MaxWaitTimeInMiliSecs>
+		<MinWaitTimeInMiliSecs>8000</MinWaitTimeInMiliSecs>
+		<DefaultWaitTimeInMiliSecs>3000</DefaultWaitTimeInMiliSecs>
+	</ProjectSetup>
+	<!-- Host Machine Configuration Settings -->
+	<Host>	
+		<MachineName>VS4D27YR1</MachineName>
+		<HostName>SIMULATOR</HostName>
+		<UserName>IDEXX</UserName>
+		<UserPWD>ivls123</UserPWD>
+		<BasePath>C:\IVLS\BACKUP_IVLS\</BasePath>
+		<TaskName>TASK_SIMULATOR</TaskName>
+		<JobName>JOB_SIMULATOR</JobName>
+		<RemoteConnectionFlag>YES</RemoteConnectionFlag>
+	</Host>	
+	<Host>
+		<MachineName>VS9HWGYR1</MachineName>
+		<HostName>IVLS</HostName>
+		<UserName>VetStation</UserName>
+		<UserPWD>LaserCyte1</UserPWD>
+		<BasePath>C:\IVLS\BACKUP_IVLS\</BasePath>
+		<TaskName>TASK_IVLS</TaskName>
+		<JobName>JOB_IVLS</JobName>
+		<RemoteConnectionFlag>YES</RemoteConnectionFlag>
+	</Host>
+	<Host>
+		<MachineName>VSJ4NMDH1</MachineName>
+		<HostName>CS</HostName>
+		<UserName>Administrator</UserName>
+		<UserPWD>VSJ4NMDH1</UserPWD>
+		<BasePath>NA</BasePath>
+		<TaskName>NA</TaskName>
+		<JobName>NA</JobName>
+		<RemoteConnectionFlag>NO</RemoteConnectionFlag>
+	</Host>
+	
+</configuration>

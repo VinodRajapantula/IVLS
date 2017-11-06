@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- Instruction to Create Test Scenario File -->
+	<!-- ################################################################################# -->
+	<!-- The test scenario need the following details -->
+	<!-- ScenarioID		: This ScenarioID should match with ScenarioId given in Test Suite file-->
+	<!-- TestStep		: This should contain unique stepID -->
+	<!-- StepDescription	: Provide step description details -->
+	<!-- PerformAction	: Business Function Name -->
+	<!-- InputData		: The input data can be provided in the following three area -->
+	<!--          		: "Configuration" xml File such as AppPath AppName ...etc.. -->
+	<!--          		: "TestData" CSV File in case of multiple iteration(s)  -->
+	<!--          		: Directly providing  values at InputData node  -->
+	<!-- StepExecuteFlag	: Mark the execution flag as YES/NO -->
+	<!-- Application		: The tool performs the operation on respective Application Name specified -->
+	<!-- ################################################################################# -->
+	<TestSuite>
+		<TestScenario ScenarioID="TS001">
+
+			<TestStep StepId="1">
+				<StepDescription>Create Lab Request in Corner Stone Application</StepDescription>
+				<PerformAction>CreateLabRequestCS</PerformAction>
+				<InputData>[ClientID][PatientID][LabID][VisitTypeID][ProfileID]</InputData>
+				<StepExecuteFlag>YES</StepExecuteFlag>
+				<Application>CORNERSTONE</Application>
+			</TestStep>
+			<TestStep StepId="2">
+				<StepDescription>Restart IVLS MAchine to refresh all the services</StepDescription>
+				<PerformAction>ReStartIVLSApplication</PerformAction>
+				<InputData>NA</InputData>
+				<StepExecuteFlag>YES</StepExecuteFlag>
+				<Application>IVLS</Application>
+			</TestStep>
+			<TestStep StepId="3">
+				<StepDescription>Check IVLS Machine Connectivity</StepDescription>
+				<PerformAction>CheckIVLSMachineConnectivity</PerformAction>
+				<InputData>NA</InputData>
+				<StepExecuteFlag>YES</StepExecuteFlag>
+				<Application>CORNERSTONE</Application>
+			</TestStep>
+			<TestStep StepId="4">
+				<StepDescription>Wait Until IVLS Application is Loaded</StepDescription>
+				<PerformAction>WaitUntilReadyIVLS</PerformAction>
+				<InputData>NA</InputData>
+				<StepExecuteFlag>YES</StepExecuteFlag>
+				<Application>IVLS</Application>
+			</TestStep>
+			<TestStep StepId="5">
+				<StepDescription>Launch Simulator Application</StepDescription>
+				<PerformAction>OpenSimulatorApp</PerformAction>
+				<InputData>NA</InputData>
+				<StepExecuteFlag>YES</StepExecuteFlag>
+				<Application>SIMULATOR</Application>
+			</TestStep>
+			<TestStep StepId="6">
+				<StepDescription>Create Instrument(s) in Simulator </StepDescription>
+				<PerformAction>CreateInstrument</PerformAction>
+				<InputData>[InstrumentName]</InputData>
+				<StepExecuteFlag>YES</StepExecuteFlag>
+				<Application>SIMULATOR</Application>
+			</TestStep>
+			<TestStep StepId="7">
+				<StepDescription>Select Patient(s) from pending List to run test</StepDescription>
+				<PerformAction>RunTestForPendingPatient</PerformAction>
+				<InputData>[PatientName][TestName]</InputData>
+				<StepExecuteFlag>YES</StepExecuteFlag>
+				<Application>IVLS</Application>
+			</TestStep>	
+			<TestStep StepId="8">
+				<StepDescription>Capture Requisition  ID details from Select Instrument Screen in IVLS Application </StepDescription>
+				<PerformAction>GetRequisitionID</PerformAction>
+				<InputData>NA</InputData>
+				<StepExecuteFlag>YES</StepExecuteFlag>
+				<Application>IVLS</Application>
+			</TestStep>
+			<TestStep StepId="9">
+				<StepDescription>Create Test Result XML file in Simulator data folder based on Requisition Id for selected Instrument</StepDescription>
+				<PerformAction>CreateSimulatorTestResultXMLFile</PerformAction>
+				<InputData>[InstrumentType]</InputData>
+				<StepExecuteFlag>YES</StepExecuteFlag>
+				<Application>CORNERSTONE</Application>
+			</TestStep>
+			<TestStep StepId="10">
+				<StepDescription>Select Instruments to Run Test</StepDescription>
+				<PerformAction>SelectInstrumentToRunTests</PerformAction>
+				<InputData>[InstrumentName]</InputData>
+				<StepExecuteFlag>YES</StepExecuteFlag>
+				<Application>IVLS</Application>
+			</TestStep>
+			<TestStep StepId="11">
+				<StepDescription>Verify Request Received Count in Simulator</StepDescription>
+				<PerformAction>verifyResultRequestsCount</PerformAction>
+				<InputData>[RequestCount]</InputData>
+				<StepExecuteFlag>YES</StepExecuteFlag>
+				<Application>SIMULATOR</Application>
+			</TestStep>
+			<TestStep StepId="12">
+				<StepDescription>Verify Result Sent Count in Simulator</StepDescription>
+				<PerformAction>verifyResultSentCount</PerformAction>
+				<InputData>[ResultCount]</InputData>
+				<StepExecuteFlag>YES</StepExecuteFlag>
+				<Application>SIMULATOR</Application>
+			</TestStep>
+			<TestStep StepId="13">
+				<StepDescription>Verify IVLS test results with  Simulator sent test results</StepDescription>
+				<PerformAction>VerifyLabResultsInIVLS</PerformAction>
+				<InputData>NA</InputData>
+				<StepExecuteFlag>YES</StepExecuteFlag>
+				<Application>IVLS</Application>
+			</TestStep>
+			<TestStep StepId="14">
+				<StepDescription>Navigate to IVLS Home Screen</StepDescription>
+				<PerformAction>NavigateHomeScreen</PerformAction>
+				<InputData>NA</InputData>
+				<StepExecuteFlag>YES</StepExecuteFlag>
+				<Application>IVLS</Application>
+			</TestStep>
+			<TestStep StepId="15">
+				<StepDescription>Verify Lab Results in Corner Stone DataBAse</StepDescription>
+				<PerformAction>verifyLabResultStatusCS</PerformAction>
+				<InputData>NA</InputData>
+				<StepExecuteFlag>YES</StepExecuteFlag>
+				<Application>CORNERSTONE</Application>
+			</TestStep>
+		</TestScenario>
+		<TestScenario ScenarioID="TS002">
+			<TestStep StepId="1">
+				<StepDescription>Verify Lab Results in Corner Stone Application</StepDescription>
+				<PerformAction>VerifyLabResultsCornerStone</PerformAction>
+				<InputData>NA</InputData>
+				<StepExecuteFlag>YES</StepExecuteFlag>
+				<Application>CORNERSTONE</Application>
+			</TestStep>
+			<TestStep StepId="2">
+				<StepDescription>Create Instrument(s) in Simulator </StepDescription>
+				<PerformAction>CreateInstrument</PerformAction>
+				<InputData>Create|SNAPPro</InputData>
+				<StepExecuteFlag>YES</StepExecuteFlag>
+				<Application>SIMULATOR</Application>
+			</TestStep>
+			<TestStep StepId="3">
+				<StepDescription>Verify Selected instruments activated in IVLS Application</StepDescription>
+				<PerformAction>VerifyInstrumentState</PerformAction>
+				<InputData>SNAPPro</InputData>
+				<StepExecuteFlag>YES</StepExecuteFlag>
+				<Application>SIMULATOR</Application>
+			</TestStep>
+		</TestScenario>
+		<TestScenario ScenarioID="TS003">
+			<TestStep StepId="1">
+				<StepDescription>Launch Simulator Application</StepDescription>
+				<PerformAction>OpenSimulatorApp</PerformAction>
+				<InputData>NA</InputData>
+				<StepExecuteFlag>YES</StepExecuteFlag>
+				<Application>SIMULATOR</Application>
+			</TestStep>
+			<TestStep StepId="2">
+				<StepDescription>Create Instrument(s) in Simulator </StepDescription>
+				<PerformAction>CreateInstrument</PerformAction>
+				<InputData>Create|SNAPPro</InputData>
+				<StepExecuteFlag>YES</StepExecuteFlag>
+				<Application>SIMULATOR</Application>
+			</TestStep>
+			<TestStep StepId="3">
+				<StepDescription>Verify to get Patient Name from  Corner Stone DB based on Patient ID</StepDescription>
+				<PerformAction>GetPatientNameCS</PerformAction>
+				<InputData>[PatientID][ClientID]</InputData>
+				<StepExecuteFlag>YES</StepExecuteFlag>
+				<Application>CORNERSTONE</Application>
+			</TestStep>
+		</TestScenario>
+	</TestSuite>

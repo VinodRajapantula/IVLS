@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- Instruction to Create Test Suite file -->
+	<!-- ################################################################################# -->
+	<!-- The test scenario need the following five field information -->
+	<!-- ScenarioID			: Is a unique ID Example : - TS001 , TS002 ......etc.. -->
+	<!-- ScenarioName		: This field need detail description of the test scenario -->
+	<!-- DataIteration 		: This field need either of two values WITHSAMEDATA/WITHDFFERENTDATA-->
+	<!-- IterationCount		: Enter No. of iteration the scenario has to execute -->
+	<!-- ScenarioExecutionFlag	: Mark the execution flag as YES/NO -->
+	<!-- TestDataName		: Specify Test Data File Name from where the scenario has to read test data -->
+	<!-- ################################################################################# -->
+	<TestSuite>
+		<TestScenario>
+			<ScenarioID>TS001</ScenarioID>
+			<ScenarioName>Verify Lab Test Results in Corner Stone Application sent from IVLS Application </ScenarioName>
+			<DataIteration>WITHSAMEDATA</DataIteration>
+			<IterationCount>1</IterationCount>
+			<ScenarioExecutionFlag>YES</ScenarioExecutionFlag>
+			<TestDataName>TESTDATA</TestDataName>
+		</TestScenario>
+		<TestScenario>
+			<ScenarioID>TS002</ScenarioID>
+			<ScenarioName>Sample Test Scenario 2 </ScenarioName>
+			<DataIteration>WITHDFFERENTDATA</DataIteration>
+			<IterationCount>5</IterationCount>
+			<ScenarioExecutionFlag>NO</ScenarioExecutionFlag>
+			<TestDataName>TESTDATA</TestDataName>
+		</TestScenario>
+		<TestScenario>
+			<ScenarioID>TS003</ScenarioID>
+			<ScenarioName>Sample Test Scenario 2 </ScenarioName>
+			<DataIteration>WITHSAMEDATA</DataIteration>
+			<IterationCount>20</IterationCount>
+			<ScenarioExecutionFlag>NO</ScenarioExecutionFlag>
+			<TestDataName>TESTDATA</TestDataName>
+		</TestScenario>
+	</TestSuite>

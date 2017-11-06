@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TestDataSet>
+	<TestScenario ScenarioID="TS001">
+		<TestIteration Iteration="1">
+			<Function name="CreateLabRequestCS">
+				<ClientID>IVLS1234</ClientID>
+				<PatientID>52933</PatientID>
+				<LabID>INCLINIC</LabID>
+				<VisitTypeID>11336</VisitTypeID>
+				<ProfileID>3990</ProfileID>
+			</Function>
+			<Function name="CreateInstrument">
+				<InstrumentName>Catalyst Dx</InstrumentName>
+			</Function>
+			<Function name="RunTestForPendingPatient">
+				<PatientName>PATIENTAUTOMATION</PatientName>
+				<TestName>AUTOMATIONLABTEST</TestName>
+			</Function>
+			<Function name="SelectInstrumentToRunTests">
+				<InstrumentName>Catalyst Dx</InstrumentName>
+			</Function>
+			<Function name="CreateSimulatorTestResultXMLFile">
+				<InstrumentType>catalyst</InstrumentType>
+			</Function>
+			<Function name="verifyResultRequestsCount">
+				<RequestCount>1</RequestCount>
+			</Function>
+			<Function name="verifyResultSentCount">
+				<ResultCount>1</ResultCount>
+			</Function>
+		</TestIteration>
+		<TestIteration Iteration="2">
+			<Function name="CreateInstrument">
+				<InstrumentName>SNAPPro</InstrumentName>
+			</Function>
+			<Function name="RunTestForPendingPatient">
+				<TestName>AUTOMATIONLABTEST</TestName>
+			</Function>
+		</TestIteration>
+	</TestScenario>
+</TestDataSet>
